@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
 
 function Login() {
+  const [showPassword, setShowPassword] = useState(false);
+
+  const handleShiftButtonClick = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
     <div>
       <div className="auth-topBar">
@@ -13,7 +19,7 @@ function Login() {
           <h2>Log in</h2>
           <p>Enter your details below</p>
         </div>
-        <form className="signIn-content-container" novalidate>
+        <form className="signIn-content-container" noValidate>
           <div className="input-container">
             <label>Email</label>
             <div className="input-wrapper" style={{ width: "100%" }}>
@@ -29,13 +35,17 @@ function Login() {
             <label>Password</label>
             <div
               className="input-wrapper"
-              style={{ width: "100%", maxHeight: "46px", alignItems: "center" }}
+              style={{
+                width: "100%",
+                maxHeight: "46px",
+                alignItems: "center",
+              }}
             >
               <input
                 id="password"
-                type="password"
+                type={showPassword ? "text" : "password"}
                 required
-                name="email"
+                name="password"
                 placeholder="password"
               />
               <button
@@ -45,8 +55,9 @@ function Login() {
                   padding: "0px",
                   alignItems: "center",
                 }}
+                onClick={handleShiftButtonClick}
               >
-                o
+                {showPassword ? "•" : "o"}
               </button>
             </div>
             <div className="signIn-forgotPassword-wrapper">
