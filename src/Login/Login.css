@@ -1,0 +1,181 @@
+#root {
+  height: 100%;
+}
+
+.auth-topBar {
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, .1);
+  display: flex;
+  gap: 24px;
+  height: 68px;
+  padding: 12px;
+}
+
+.auth-topBar button {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #dedddd;
+  border-radius: 8px;
+  display: flex;
+  height: 44px;
+  padding: 12px 14px;
+  width: 44px;
+}
+
+.auth-topBar h3 {
+  cursor: pointer;
+}
+
+.signIn-container {
+  gap: 32px;
+  min-width: 40%;
+  
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding-top: 78px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.signIn-text-container {
+  color: rgba(43, 43, 43, .7);
+  gap: 16px;
+  justify-content: left;
+  text-align: left !important;
+  width: 100%;
+}
+
+.signIn-container h2 {
+  color: #2e2e2e;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 52px;
+}
+
+.signIn-text-container p {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -.28px;
+  line-height: 24px;
+  text-align: left !important;
+}
+
+.signIn-content-container {
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  color: #4d4d4d;
+  font-family: NeueHaas-roman;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.input-wrapper {
+  align-items: center;
+  background: #fff;
+  background: var(--generic-white, #fff);
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, .05);
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  width: 500px;
+}
+
+.input-wrapper input {
+  background: #fff;
+  background: var(--generic-white, #fff);
+  height: 20px;
+  border: none;
+}
+
+.input-wrapper button {
+  background: none;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+}
+
+.signIn-forgotPassword-wrapper {
+  display: flex;
+}
+
+.signIn-forgotPassword-wrapper button {
+  background: none;
+  color: #5498ee;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -.32px;
+  line-height: 28px;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 7px;
+  padding-top: 0;
+  border: none;
+}
+
+.signIn-button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-tertiary {
+  align-items: center;
+  background-color: #fff;
+  background: #5498ee;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .08);
+  color: #fff;
+  display: flex;
+  font-family: Inter;
+  font-size: 14px;
+  gap: 8px;
+  justify-content: center;
+  line-height: 20px;
+  margin: 0;
+  padding: 8px 12px;
+}
+
+.signIn-content-container button {
+  margin-top: 12px !important;
+}
+
+.signIn-gotoSignup-wrapper {
+  display: flex;
+}
+
+.signIn-gotoSignup-wrapper button {
+  background: none;
+  color: #5498ee;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -.32px;
+  line-height: 28px;
+  padding-bottom: 0;
+  padding-left: 7px;
+  padding-top: 0;
+  border: none;
+}
