@@ -1,0 +1,30 @@
+.zero-avatar-container {
+  text-align: center;
+}
+
+.zero-avatar-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.zero-card {
+  width: 25%; /* Each card occupies 25% of the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0; /* No margin between cards */
+}
+
+.zero-card img {
+  width: 100%; /* Make images fill the width of the card */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .zero-card {
+    width: 45%; /* Adjusted width for smaller screens to fit 2 cards in a row */
+  }
+}

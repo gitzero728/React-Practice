@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import "./Login.css";
 
 function Login() {
@@ -22,7 +24,10 @@ function Login() {
         <form className="signIn-content-container" noValidate>
           <div className="input-container">
             <label>Email</label>
-            <div className="input-wrapper" style={{ width: "100%" }}>
+            <div
+              className="input-wrapper"
+              style={{ width: "-webkit-fill-available" }}
+            >
               <input
                 type="email"
                 name="email"
@@ -36,7 +41,7 @@ function Login() {
             <div
               className="input-wrapper"
               style={{
-                width: "100%",
+                width: "-webkit-fill-available",
                 maxHeight: "46px",
                 alignItems: "center",
               }}
@@ -65,9 +70,9 @@ function Login() {
             </div>
           </div>
           <div className="signIn-button-wrapper">
-            <button className="button-tertiary" type="submit">
+            <Link className="button-tertiary" to="/ZeroAvatar">
               Log in
-            </button>
+            </Link>
           </div>
         </form>
         <div className="signIn-gotoSignup-wrapper">

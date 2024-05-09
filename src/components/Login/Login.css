@@ -33,7 +33,6 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: auto;
   padding-top: 78px;
   width: -moz-fit-content;
@@ -43,29 +42,23 @@
 .signIn-text-container {
   color: rgba(43, 43, 43, .7);
   gap: 16px;
-  justify-content: left;
   text-align: left !important;
   width: 100%;
 }
 
 .signIn-container h2 {
   color: #2e2e2e;
-  font-family: Inter;
   font-size: 40px;
-  font-style: normal;
   font-weight: 700;
   letter-spacing: -2px;
   line-height: 52px;
 }
 
 .signIn-text-container p {
-  font-family: Inter;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   letter-spacing: -.28px;
   line-height: 24px;
-  text-align: left !important;
 }
 
 .signIn-content-container {
@@ -80,14 +73,12 @@
 
 label {
   color: #4d4d4d;
-  font-family: NeueHaas-roman;
   font-size: 16px;
   line-height: 24px;
   margin: 0;
 }
 
 .input-wrapper {
-  align-items: center;
   background: #fff;
   background: var(--generic-white, #fff);
   border: 1px solid rgba(0, 0, 0, .1);
@@ -101,9 +92,11 @@ label {
 
 .input-wrapper input {
   background: #fff;
-  background: var(--generic-white, #fff);
   height: 20px;
   border: none;
+}
+.input-wrapper input:focus {
+  outline: none;
 }
 
 .input-wrapper button {
@@ -137,6 +130,7 @@ label {
 .signIn-button-wrapper {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .button-tertiary {
