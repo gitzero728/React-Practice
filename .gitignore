@@ -21,7 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-src/pages/ZeroAvatar.jsx
 public/assets/1.jpeg
 public/assets/2.png
 public/assets/3.png
