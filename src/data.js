@@ -1,7 +1,8 @@
+//src/data.js
 export default [
   {
     title: "1",
-    url: "assets/1.jpeg",
+    url: "/assets/1.jpeg",
     description: "zero 1",
   },
   {

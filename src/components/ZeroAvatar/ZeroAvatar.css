@@ -9,7 +9,8 @@
 }
 
 .zero-card {
-  width: 25%; /* Each card occupies 25% of the container */
+  width: calc(25% - 20px); /* Each card occupies 25% of the container minus padding */
+  padding: 10px; /* Add padding to the cards */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,13 +19,20 @@
 }
 
 .zero-card img {
-  width: 100%; /* Make images fill the width of the card */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%; /* Ensure images take up the full width of the card */
+  height: 100%; /* Ensure images take up the full height of the card */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  object-position: center; /* Center the image within the container */
+  border: 5px solid #FFD700; /* Add yellow border */
+  border-radius: 15px; /* Add rounded corners */
 }
 
-/* Media query for smaller screens */
+.zero-card.selected img {
+  border-color: red; /* Change border color to red for selected image */
+}
+
 @media (max-width: 768px) {
   .zero-card {
-    width: 45%; /* Adjusted width for smaller screens to fit 2 cards in a row */
+    width: calc(45% - 20px); /* Adjusted width for smaller screens to fit 2 cards in a row */
   }
 }

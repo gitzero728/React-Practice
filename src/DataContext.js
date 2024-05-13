@@ -1,6 +1,6 @@
 // DataContext.js
 import React, { createContext, useContext } from "react";
-import data from "./data";
+import data from "./data"; // Import the data array
 
 const DataContext = createContext();
 
