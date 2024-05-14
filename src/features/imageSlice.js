@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  selectedIndex: null,
+  selectedIndex: -1,
 };
 
 const imageSlice = createSlice({
