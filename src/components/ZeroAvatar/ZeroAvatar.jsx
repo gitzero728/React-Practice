@@ -1,15 +1,13 @@
-// ZeroAvatar.jsx
 import React from "react";
 import "./ZeroAvatar.css";
-import { useSelector, useDispatch } from "react-redux";
-import { selectImage } from "../../actions/imageActions";
-import { getSelectedIndex } from "../../selectors/imageSelectors";
+import { useDispatch, useSelector } from "react-redux";
+import { selectImage } from "../../features/imageSlice";
 import { useData } from "../../DataContext";
 
 function ZeroAvatar() {
   const data = useData();
   const dispatch = useDispatch();
-  const selectedIndex = useSelector(getSelectedIndex);
+  const selectedIndex = useSelector((state) => state.image.selectedIndex);
 
   const handleImageClick = (index) => {
     dispatch(selectImage(index));
